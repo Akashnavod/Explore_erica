@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://worldstrides.com/wp-content/uploads/2015/07/api268.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav { display: flex;
+	padding: 2% 6%;
+	justify-contetnt: space-between;
+	align-items: center;
+	align-items: center;
+}
+
+
+.nav-links { flex: 1;
+	text-align: right;}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{ color: #fff;
+		    text-decoration: none;
+		    font-size: 13px;}
+.nav-links li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.text-box { 
+	   width: 90%;
+	   color: #fff;
+	   position: absolute;
+	   top: 50%;
+	   left: 50%;
+	   transform: translate(-50%,-50%);
+	   text-align: center;
+
+}
+.text-box h1 {
+	font-size: 62px;	 
+
+}
+
+.text-box p {
+	margine: 10px 0 40px;
+	font-sixe: 14px;
+	color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; 
+    transition: background 0.3s, color 0.3s; 
+}
+
+.hero-btn:hover {
+    background: red;
+    color: #000;
+}
+	 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #C8C8C8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.6;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+    background-color: black; 
+    border-top: 0px solid black;
+    padding: 1px;
+}
